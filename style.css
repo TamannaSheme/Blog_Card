@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --dark:#2b2d42;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf2f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    color: var(--dark);
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.blogs__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+}
+
+.post{
+    background-color: white;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--dark)
+}
+
+.post:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd
+}
+
+.post small{
+    margin: 10px 0;
+    padding: 3px 10px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+}
+
+.post .description{
+    margin: 10px 0;
+    height: 30%;
+}
+
+.post .more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: cornflowerblue;
+}
+
+.more p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.more i{
+    font-size: 25px;
+}
